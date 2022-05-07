@@ -61,6 +61,28 @@ goroutine 0 finished. Int64, Value = 2176680827608690 Total Time took: 1.9271118
 goroutine 2 finished. Int64, Value = 2176680827608690 Total Time took: 1.930444902s
 ```
 
+Intel 12700H (6PC 12PT + 8EC)
+```
+>multicore_bench-windows-amd64.exe -c 4
+hello, benchmarking FP + INT with 4 goroutine(s)
+goroutine 2 finished. Float32, Value(overflowed) = 7.0368744e+13 Total Time took: 2.8616844s
+goroutine 0 finished. Float32, Value(overflowed) = 7.0368744e+13 Total Time took: 2.8642468s
+goroutine 3 finished. Float32, Value(overflowed) = 7.0368744e+13 Total Time took: 2.8642468s
+goroutine 1 finished. Float32, Value(overflowed) = 7.0368744e+13 Total Time took: 2.8642468s
+goroutine 2 finished. Float64, Value = 2.176682290419792e+15 Total Time took: 2.870283s
+goroutine 1 finished. Float64, Value = 2.176682290419792e+15 Total Time took: 2.880395s
+goroutine 3 finished. Float64, Value = 2.176682290419792e+15 Total Time took: 2.8839063s
+goroutine 0 finished. Float64, Value = 2.176682290419792e+15 Total Time took: 2.8839063s
+goroutine 2 finished. Int32, Value(overflowed) = -1090425452 Total Time took: 1.8422354s
+goroutine 0 finished. Int32, Value(overflowed) = -1090425452 Total Time took: 1.8472402s
+goroutine 3 finished. Int32, Value(overflowed) = -1090425452 Total Time took: 1.8523106s
+goroutine 1 finished. Int32, Value(overflowed) = -1090425452 Total Time took: 1.8523106s
+goroutine 0 finished. Int64, Value = 2176680827608690 Total Time took: 1.8305712s
+goroutine 2 finished. Int64, Value = 2176680827608690 Total Time took: 1.8452098s
+goroutine 1 finished. Int64, Value = 2176680827608690 Total Time took: 1.8452098s
+goroutine 3 finished. Int64, Value = 2176680827608690 Total Time took: 1.8608355s
+```
+
 Rockchip RK3568 (4C Coretex-A55 2.0GHz)
 ```
 $>  multicore_bench_build/multicore_bench-linux-arm64 
