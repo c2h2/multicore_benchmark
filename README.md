@@ -9,7 +9,7 @@ Simple math arithmetics, Parallelly benchmarking core speed with GO
  
 # Running results: on a Macbook Air M1
 ```
-$> build/multicore_bench-darwin-arm64 -c 4
+$> multicore_bench_build/multicore_bench-darwin-arm64 -c 4
 hello, benchmarking FP + INT with 4 goroutine(s)
 goroutine 0 finished. Float32, Value(overflowed) = 7.0368744e+13 Total Time took: 3.0130305s
 goroutine 3 finished. Float32, Value(overflowed) = 7.0368744e+13 Total Time took: 3.014720292s
@@ -28,4 +28,3 @@ goroutine 0 finished. Int64, Value = 2176680827608690 Total Time took: 2.3955016
 goroutine 1 finished. Int64, Value = 2176680827608690 Total Time took: 2.39824575s
 goroutine 3 finished. Int64, Value = 2176680827608690 Total Time took: 2.3982815s
  ```
- 

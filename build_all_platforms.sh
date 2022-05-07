@@ -3,8 +3,11 @@
 package=multicore_bench.go
 package_name=multicore_bench
 platforms=("linux/amd64" "linux/386" "linux/arm" "linux/arm64" "linux/mips" "linux/mips64" "darwin/arm64" "darwin/amd64" "freebsd/amd64" "freebsd/386" "windows/386" "windows/amd64")
-rm -rf build
-mkdir -p build/tarballs
+thedir=multicore_bench_build
+thedir_tarballs=multicore_bench_build/tarballs
+rm -rf $thedir
+mkdir -p $thedir_tarballs
+
 
 for platform in "${platforms[@]}"
 do	
@@ -16,8 +19,8 @@ do
 		output_name+='.exe'
 	fi	
 
-	env GOOS=$GOOS GOARCH=$GOARCH go build -o build/$output_name $package
-	tar cvfz build/tarballs/$output_name.tar.gz build/$output_name
+	env GOOS=$GOOS GOARCH=$GOARCH go build -o $thedir/$output_name $package
+	tar cvfz $thedir_tarballs/$output_name.tar.gz $thedir/$output_name
 	if [ $? -ne 0 ]; then
    		echo 'An error has occurred! Aborting the script execution...'
 		exit 1
