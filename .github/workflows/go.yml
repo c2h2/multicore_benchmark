@@ -16,8 +16,8 @@ jobs:
     - name: Set up Go
       uses: actions/setup-go@v3
       with:
-        go-version: 1.18
+        go-version: 1.18.1
 
     - name: Build
-      run: go build -v multicore_bench.go 
+      run: ./build_all_platforms.sh 
 
