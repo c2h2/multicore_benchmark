@@ -13,7 +13,9 @@ Simple math arithmetics, Parallelly benchmarking core speed with GO
 # Run: with 4 cores
 ```./multicore_bench -c 4```
  
-# Running results: on a Macbook Air M1
+# Running results:
+
+Macbook Air M1
 ```
 $> multicore_bench_build/multicore_bench-darwin-arm64 -c 4
 hello, benchmarking FP + INT with 4 goroutine(s)
@@ -35,9 +37,9 @@ goroutine 1 finished. Int64, Value = 2176680827608690 Total Time took: 2.3982457
 goroutine 3 finished. Int64, Value = 2176680827608690 Total Time took: 2.3982815s
  ```
  
-On AMD Ryzen 5950x
+AMD Ryzen 5950x
  ```
-$> multicore_bench_build/multicore_bench-darwin-arm64 -c 4
+$> multicore_bench_build/multicore_bench-linux-amd64 -c 4
 hello, benchmarking FP + INT with 4 goroutine(s)
 goroutine 1 finished. Float32, Value(overflowed) = 7.0368744e+13 Total Time took: 2.238745459s
 goroutine 2 finished. Float32, Value(overflowed) = 7.0368744e+13 Total Time took: 2.241890144s
