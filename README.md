@@ -34,3 +34,25 @@ goroutine 0 finished. Int64, Value = 2176680827608690 Total Time took: 2.3955016
 goroutine 1 finished. Int64, Value = 2176680827608690 Total Time took: 2.39824575s
 goroutine 3 finished. Int64, Value = 2176680827608690 Total Time took: 2.3982815s
  ```
+ 
+On AMD Ryzen 5950x
+ ```
+$> multicore_bench_build/multicore_bench-darwin-arm64 -c 4
+hello, benchmarking FP + INT with 4 goroutine(s)
+goroutine 1 finished. Float32, Value(overflowed) = 7.0368744e+13 Total Time took: 2.238745459s
+goroutine 2 finished. Float32, Value(overflowed) = 7.0368744e+13 Total Time took: 2.241890144s
+goroutine 0 finished. Float32, Value(overflowed) = 7.0368744e+13 Total Time took: 2.271218761s
+goroutine 3 finished. Float32, Value(overflowed) = 7.0368744e+13 Total Time took: 2.271348542s
+goroutine 1 finished. Float64, Value = 2.176682290419792e+15 Total Time took: 2.879430684s
+goroutine 3 finished. Float64, Value = 2.176682290419792e+15 Total Time took: 2.879786115s
+goroutine 2 finished. Float64, Value = 2.176682290419792e+15 Total Time took: 2.880157397s
+goroutine 0 finished. Float64, Value = 2.176682290419792e+15 Total Time took: 2.881713884s
+goroutine 1 finished. Int32, Value(overflowed) = -1090425452 Total Time took: 2.433871896s
+goroutine 2 finished. Int32, Value(overflowed) = -1090425452 Total Time took: 2.434115687s
+goroutine 0 finished. Int32, Value(overflowed) = -1090425452 Total Time took: 2.434667099s
+goroutine 3 finished. Int32, Value(overflowed) = -1090425452 Total Time took: 2.435343671s
+goroutine 3 finished. Int64, Value = 2176680827608690 Total Time took: 1.923438975s
+goroutine 1 finished. Int64, Value = 2176680827608690 Total Time took: 1.924397299s
+goroutine 0 finished. Int64, Value = 2176680827608690 Total Time took: 1.927111899s
+goroutine 2 finished. Int64, Value = 2176680827608690 Total Time took: 1.930444902s
+```
