@@ -1,5 +1,11 @@
+[![stable](https://img.shields.io/badge/stable-stable-green.svg)](https://github.com/c2h2/multicore_benchmark/) 
+[![license](https://img.shields.io/github/license/c2h2/multicore_benchmark.svg?style=plastic)]() 
+[![download_count](https://img.shields.io/github/downloads/c2h2/multicore_benchmark/total.svg?style=plastic)](https://github.com/c2h2/multicore_benchmark/releases) 
+[![download](https://img.shields.io/github/release/c2h2/multicore_benchmark.svg?style=plastic)](https://github.com/c2h2/multicore_benchmark/releases)
+
 # multicore_benchmark
 Simple math arithmetics, Parallelly benchmarking core speed with GO 
+
 
 # Build: on mac/linux
 ```go build multicore_bench.go``` or ```./build_all_platforms.sh ```
